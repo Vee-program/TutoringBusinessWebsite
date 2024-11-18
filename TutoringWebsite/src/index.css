@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #003366;
+  color: white;
+  padding-bottom: 5em;
+}
+.about-heading {
+  font-family: "Playfair Display";
+  text-align: center;
+  padding-top: 2em;
+  color: white;
+}
+.profile-image {
+  width: 30%;
+  display: block;
+  margin: 1.5em auto;
+}
+.info-header {
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3776b6;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+}
+.tutor-info {
+  font-size: 1.1rem;
+  width: 70%;
+  padding-top: 0.5em;
+}
+.services {
+  width: 100%;
+  height: 100vh;
+}
+.services-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  gap: 10px;
+}
+.services-header {
+  font-family: "Playfair Display";
+  text-align: center;
+  color: #003366;
+}
+.subjects-header {
+  font-family: "Playfair Display";
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #4878a8;
+}
+.options-container {
+  display: flex;
+  flex-direction: column;
+}
+.tutoring-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 150px;
+  gap: 20px;
+}
+.options-header {
+  text-align: center;
+}
+.options-subheader {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 0.5em;
+}
+.sessions {
+  width: 100%;
+}
+.session-type {
+  margin-bottom: 4em;
+  width: 100%;
+  height: 150px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.callToAction {
+  text-align: center;
+  padding-top: 1.5em;
+}
+.sessionButton {
+  padding: 1.2em;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: #003366;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 2em auto;
+}
+a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .subjects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .services-container {
+    width: 80%;
+  }
+  .subjects {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-label {
+  font-size: 1.2rem;
+}
+.contact-input {
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  width: 500px;
+  padding-left: 1.2em;
+  height: 35px;
+  margin-bottom: 1em;
+}
+.contact-textarea {
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  width: 500px;
+  height: 100px;
+  padding: 1.2em;
+}
+.contact-header {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+.contact-button {
+  margin-top: 2em;
+  background-color: #3776b6;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-input {
+    width: 100%;
+    height: 35px;
+  }
+  .contact-textarea {
+    width: 100%;
+    height: 100px;
+  }
+}
