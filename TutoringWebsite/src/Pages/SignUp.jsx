@@ -1,4 +1,6 @@
 import React from "react";
+import Testimonials from "./Testimonials";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
@@ -35,11 +37,13 @@ const SignUp = () => {
             className="g-recaptcha"
             data-sitekey="6LexA4IqAAAAAPSyIgtsAuuoNPTDQmAbkZaBfVX2"></div>
 
-          <input
-            type="submit"
-            value="Submit"
-            className="contact-input contact-button"
-          />
+          <Link to="/dashboard">
+            <input
+              type="submit"
+              value="Submit"
+              className="contact-input contact-button"
+            />
+          </Link>
         </form>
       </div>
     </div>

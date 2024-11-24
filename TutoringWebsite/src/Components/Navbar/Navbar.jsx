@@ -57,8 +57,8 @@ function Navbar() {
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link to="/signup" className={`${styles.navLink}`}>
-                <button className={`${styles.buttonHero}`}>Sign Up</button>
+              <Link to="/book" className={`${styles.navLink}`}>
+                <button className={`${styles.buttonHero}`}>Book now</button>
               </Link>
             </li>
           </ul>
