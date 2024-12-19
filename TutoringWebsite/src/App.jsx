@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Router, Routes, useLocation } from "react-router-dom";
 import Testimonials from "./Pages/Testimonials";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 import AboutMe from "./Pages/AboutMe";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
-import Dashboard from "./Dashboard/Dashboard";
 import Book from "./Pages/Book";
 
 const App = () => {
@@ -34,7 +33,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/book" element={<Book />} />
-        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

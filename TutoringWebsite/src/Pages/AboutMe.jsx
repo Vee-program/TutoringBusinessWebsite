@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../assets/profile.png";
+import Footer from "../Components/Footer/Footer";
 
 const AboutMe = () => {
   return (
@@ -31,6 +32,7 @@ const AboutMe = () => {
           hands-on knowledge.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import physics from "../assets/physics.png";
 import laptop from "../assets/laptop-icon.png";
 import location from "../assets/location-icon.png";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer/Footer";
 
 const Services = () => {
   return (
@@ -53,6 +54,7 @@ const Services = () => {
           <button className="sessionButton">Choose Your Session Type</button>
         </Link>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -8,7 +8,10 @@
 body {
   font-family: "Roboto";
 }
-
+.home-page {
+  width: 100%;
+  height: 100vh;
+}
 .about {
   width: 100%;
   height: 100vh;
@@ -19,8 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #003366;
-  color: white;
+  color: #003366;
   padding-bottom: 5em;
 }
 .about-heading {
@@ -165,7 +167,7 @@ a {
   width: 500px;
   padding-left: 1.2em;
   height: 35px;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   border-radius: 5px;
   border: 1px solid grey;
 }
@@ -191,6 +193,11 @@ a {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .contact-container {
+    width: 90%;
+  }
+}
 @media (max-width: 480px) {
   .contact-container {
     width: 100%;
@@ -216,12 +223,15 @@ a {
 }
 .green {
   color: #00b74a;
+  font-family: "Bokor";
 }
 .red {
   color: red;
+  font-family: "Bokor";
 }
 .blue {
   color: #25a4d6;
+  font-family: "Bokor";
 }
 
 .sidebar {
@@ -244,6 +254,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 25px 20px;
+  font-family: sans-serif;
 }
 .sidebar-header .header-logo .logo-image {
   width: 46px;
@@ -261,6 +272,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: sans-serif;
 }
 
 .sidebar.collapsed .sidebar-header .toogler {
@@ -347,4 +359,33 @@ a {
   bottom: 30px;
   width: 100%;
   padding-bottom: 4em;
+}
+.sidebar-nav .nav-icon {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.checkbox {
+  width: 25px;
+  height: 25px;
+  margin-top: 0.5em;
+}
+.bottom {
+  margin-bottom: 0.8em;
+}
+.dashboard-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-wrapper {
+  text-align: center;
+  margin: 2em auto;
+  width: 50%;
+  height: 400px;
+  background-color: aliceblue;
+}
+.dashboard-heading {
+  margin-top: 2em;
 }
